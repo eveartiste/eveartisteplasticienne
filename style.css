@@ -1,0 +1,258 @@
+                            /* font import (polices) */
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@500 & family= Roboto+Slab & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Shantell+Sans:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Zen+Maru+Gothic & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Courgette & display=swap');
+
+
+
+                            /* hero image (image de couverture) */
+
+.bgimage {
+    height: 100vh;
+    background: url('image/hero2.png');
+    background-size: cover;
+    position: relative;
+}
+
+
+                            /* hero text (les titres de couverture) */
+
+
+
+.hero_title /*texte titre première page*/
+{
+  font-size: 3.25rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.hero_desc /*Texte sous titre première page*/
+{
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif !important;
+    background: rgba(255,255,255,0.5);
+}
+
+.hero-text /*(propriétés communes au texte première page*/
+{
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5D6776
+}
+
+
+                                /* text navbar (texte barre du haut)*/
+
+.navbar
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    text-transform: uppercase;
+}
+
+.navbar-brand 
+{
+    color:  #5D6776;
+    transition: font-size 0.2s ease-in;
+    position: absolute;
+}
+
+.navbar-brand:hover {
+    color: white;
+    font-size: 1.4rem;
+    transition: font-size 0.2s ease-in;
+    position: absolute;
+    font-family: 'Courgette', cursive !important;
+
+}
+
+.nav-link {
+    color: #5D6776  !important;
+    transition: color 0.3s ease !important;
+    margin-left:20px;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    transition: color 0.2s ease !important;
+}
+
+.title
+{
+    color: #5D6776 !important;
+   /* font-family: 'Courgette', cursive !important; */
+    font-size: 1.5rem !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration:none;
+}
+
+
+
+                                /* display background color black on navbar scroll */
+
+.navbarDark {
+    background-color: coral;
+    transition: background-color 0.4s ease-out;
+}
+
+.navbar {
+    background-color: none;
+    transition: background-color 0.4s ease-out;
+}
+
+.navbar-collapse.collapse.show {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* social media icons styling */
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: rgb(203, 238, 243);
+    transition: color 0.2s ease;
+}
+
+.fab {
+    color: rgb(28, 28, 28);
+    transition: color 0.2s ease;
+}
+
+
+
+                        /* images horizontales */
+
+.row
+{
+    justify-content: space-evenly;
+    margin-top: 10%;
+   
+}
+
+.one-container 
+{
+    width: 100%; /* Chaque image occupe un tiers de la largeur */
+    box-sizing: border-box; /* S'assure que la largeur inclut les bordures et les marges */
+    display: flex;
+}
+  
+
+
+                            /* Sous titre */
+
+.vertical-center-about
+{ 
+    margin-top: .4rem !important;
+    font-size: 1.5rem;
+    font-weight: 520;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+
+        /*Je sais pas */
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-toggler{
+    color:#5D6776 !important;
+}
+
+.section-content{
+    display:ruby;
+}
+
+.section-title{
+    text-align: center !important;
+    margin-bottom: 70px;
+    padding-top:100px;
+    color: coral;
+}
+
+.section-container{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.navBar-container{
+    max-width: 100%;min-width:0px
+}
+
+
+
+                            /* Styles pour la barre en bas de page */
+                            
+#footer {
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.legal-bar {
+    text-align: center; 
+    margin: 5px 0;
+    font-size: 12px;
+    color: #5D6776;
+}
+
+.arc-en-ciel{
+    /* Ajoute un dégradé arc-en-ciel pour la couleur du texte */
+    background: linear-gradient(to right, red, orange, purple);
+    /* Définir une taille de texte arc-en-ciel pour une meilleure visibilité */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Pour cacher le texte d'origine */
+    /* Ajoute une marge et un remplissage pour un meilleur aspect */
+    padding: 5px 10px;
+    margin: 5px;
+    /* Supprime le soulignement des liens */
+    text-decoration: none;
+}
+/* Style du lien lorsqu'il est survolé */
+.arc-en-ciel:hover {
+    background: linear-gradient(to right, red, orange, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.vertical-center-contact
+{
+    margin-top: .4rem !important;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 4rem;
+    text-align: left;
+    color: #6c757d;
+}
